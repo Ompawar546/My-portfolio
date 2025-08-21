@@ -43,7 +43,7 @@ const AdminDashboard = () => {
       const token = localStorage.getItem('adminToken');
       
       // Fetch portfolio data
-      const portfolioResponse = await axios.get('https://oms-portfolio-19lv.onrender.com/api/admin/portfolio', {
+      const portfolioResponse = await axios.get('https://my-portfolio-backend-9xpj.onrender.com', {
         headers: { Authorization: `Bearer ${token}` }
       });
       
@@ -129,7 +129,7 @@ const AdminDashboard = () => {
     try {
       const token = localStorage.getItem('adminToken');
       await axios.put(
-        'https://oms-portfolio-19lv.onrender.com/api/admin/portfolio',
+        'https://my-portfolio-backend-9xpj.onrender.com',
         portfolioData,
         { headers: { Authorization: `Bearer ${token}` } }
       );
