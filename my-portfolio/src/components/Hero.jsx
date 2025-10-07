@@ -115,8 +115,8 @@ const Hero = () => {
                 </button>
                 
                 <a 
-                  href="/Om_Pawar_8208024158.pdf" 
-                  download="Om_Pawar_Resume.pdf"
+                  href="/Om._.Pawar_8208024158.pdf" 
+                  download="Om._.Pawar_Resume.pdf"
                   className="group px-8 py-4 border-2 border-gray-500 text-gray-300 font-semibold rounded-full hover:border-white hover:text-white hover:bg-white/10 transition-all duration-300 hover:scale-105"
                 >
                   <span className="flex items-center gap-2">

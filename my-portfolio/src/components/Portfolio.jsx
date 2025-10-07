@@ -48,7 +48,7 @@ const Portfolio = () => {
           ? 'bg-slate-900/95 backdrop-blur-md shadow-2xl border-b border-gray-700/50'
           : 'bg-transparent'
       }`}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7x1 mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             {/* Logo + Tagline */}
             <div className="flex flex-col">
@@ -82,7 +82,7 @@ const Portfolio = () => {
 
               {/* Call-to-Action Button */}
                   <a
-                    href="/Om_Pawar_8208024158.pdf"
+                    href="/Om._.Pawar_8208024158.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="ml-4 px-5 py-2 text-white bg-gradient-to-r from-blue-500 to-purple-500 rounded-xl shadow-lg hover:shadow-purple-600/30 transition-all duration-300 hover:scale-105"
