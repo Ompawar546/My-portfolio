@@ -8,7 +8,7 @@ const projects = [
       "An intelligent MERN Stack platform with automated assessment scoring, AI-powered mock interviews, personalized course and job recommendations, and enhanced user engagement.",
     tags: ["React.js", "Node.js", "Express.js", "MongoDB", "Machine Learning"],
     link: "https://prepahead-mern-project.onrender.com/",
-    image: "/api/placeholder/600/400",
+    image: "/prepahead.png",
     gradient: "from-purple-600 to-pink-600",
     icon: Brain,
     category: "AI & Web dev"
@@ -19,7 +19,7 @@ const projects = [
       "A freelance business showcase website developed from scratch to improve online presence by 60%, including SEO optimization, responsive design, and high-performance deployment.",
     tags: ["React.js", "Node.js", "CSS3", "JavaScript"],
     link: "#",
-    image: "/api/placeholder/600/400",
+    image: "/TanajiScreens.png",
     gradient: "from-blue-600 to-cyan-600",
     icon: Globe,
     category: "Web Development"
@@ -30,7 +30,7 @@ const projects = [
       "A scalable full-stack social networking app with secure authentication, real-time updates, optimized database queries, and seamless media sharing.",
     tags: ["React.js", "Node.js", "Express.js", "MongoDB"],
     link: "#",
-    image: "/api/placeholder/600/400",
+    image: "/githublogo.png",
     gradient: "from-green-600 to-teal-600",
     icon: Code,
     category: "Full Stack"
@@ -41,7 +41,7 @@ const projects = [
       "A machine learning-powered recommendation engine using collaborative and content-based filtering, integrated with TMDB API for real-time movie data.",
     tags: ["Python", "Flask", "Scikit-learn", "Pandas", "NumPy", "TMDB API"],
     link: "#",
-    image: "/api/placeholder/600/400",
+    image: "/MR.png",
     gradient: "from-orange-600 to-red-600",
     icon: Sparkles,
     category: "Machine Learning"
@@ -52,7 +52,7 @@ const projects = [
       "A Node.js backend API for managing users and orders with PostgreSQL integration, secure authentication, and RESTful architecture, designed for scalable e-commerce or order management systems.",
     tags: ["Node.js", "Express.js", "PostgreSQL", "REST API"],
     link: "#",
-    image: "/api/placeholder/600/400",
+    image: "/BG.png",
     gradient: "from-indigo-600 to-purple-600",
     icon: Database,
     category: "Backend"
@@ -63,7 +63,7 @@ const projects = [
       "A modern, interactive portfolio showcasing skills, projects, and professional achievements, designed with an engaging UI and smooth user experience.",
     tags: ["React.js", "Tailwind CSS"],
     link: "#",
-    image: "/api/placeholder/600/400",
+    image: "/portfolioLP.png",
     gradient: "from-pink-600 to-rose-600",
     icon: Palette,
     category: "Frontend"
@@ -110,10 +110,18 @@ const Projects = () => {
                   {/* Gradient border effect */}
                   <div className={`absolute inset-0 bg-gradient-to-r ${project.gradient} opacity-0 group-hover:opacity-20 transition-opacity duration-500 rounded-2xl`}></div>
                   
-                  {/* Project image/placeholder with overlay */}
-                  <div className="relative h-48 overflow-hidden">
+                {/* Project image/placeholder with overlay */}
+                <div className="relative h-48 overflow-hidden">
+                      {project.image ? (
+                            <img 
+                              src={project.image} 
+                              alt={project.title}
+                              className="absolute inset-0 w-full h-full object-cover"
+                            />
+                                    ) : (
                     <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-80`}></div>
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                  )}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                     
                     {/* Category badge */}
                     <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium text-gray-800 shadow-sm">
